@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/5643541fac.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo-1.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>                  
             </nav>
 
             <div class="header-text">
                 <p>Software Developer</p>
-                <h1>Hi, I'm <span>Stephanie Micah</span> Cahutay</h1>
+                <h1>Hi, I'm <span>Stephanie Micah</span><br> Cahutay</h1>
             </div>
         </div>
     </div>
@@ -42,9 +45,9 @@
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -79,8 +82,100 @@
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare 
+                    bibendum ligula nec porttitor. Dondimentum pharetra.  </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis vitae
+                 quas repudiandae at placeat, quod commodi incidunt vel optio labore qui harum quia dolore similique magnam quis suscipit accusantium. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repudiandae reprehenderit, 
+                sint sapiente at numquam vero, voluptatibus mollitia hic exercitationem nulla veritatis. Autem sapiente cum perferendis sequi, ea quasi ab. </p>
+                <a href="#">Learn more</a>
+            </div>
         </div>
+    </div>
+</div>
+
+<!----portfolio---->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/p1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat
+                         illum corrupti expedita sed incidunt, soluta nesciunt earum libero quod aperiam quibusdam dolor, doloremque pariatur autem deserunt aspernatur maiores molestias.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/p2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat
+                         illum corrupti expedita sed incidunt, soluta nesciunt earum libero quod aperiam quibusdam dolor, doloremque pariatur autem deserunt aspernatur maiores molestias.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/p3.png">
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat
+                         illum corrupti expedita sed incidunt, soluta nesciunt earum libero quod aperiam quibusdam dolor, doloremque pariatur autem deserunt aspernatur maiores molestias.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>stephaniecahutay@cit.edu</p>
+                <p><i class="fas fa-phone-square-alt"></i>09456897766</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/String Class.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023, Stephanie Micah Cahutay</p>
     </div>
 </div>
 
@@ -92,14 +187,46 @@
         function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
+               
             }
             for(tabcontent of tabcontents){
-                tablink.classList.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("activelink");
+            event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
         
     </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNzhtC82WWqp_Jc_NTh8BT1sF6ryp0yNK8I_of6EScdyD_S31KVjXlcABwX78-v5QF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })      
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
