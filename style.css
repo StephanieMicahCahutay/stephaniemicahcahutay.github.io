@@ -30,7 +30,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .logo{
     width: 10rem;
 }
@@ -100,17 +99,21 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 
 }
-
+.about-col-2 p{
+    text-align: justify;
+    text-indent: 30px;
+}
 .sub-title{
     font-size: 2.8rem;
     font-weight: 600;
     color: #fff;
 }
 
+
 .tab-titles{
     display: flex;
     margin: 0.5rem 0 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 .tab-links{
     margin-right: 1.7rem;
@@ -138,7 +141,7 @@ nav ul li a:hover::after{
     margin: 0.7rem 1rem;
 }
 .tab-contents ul li span{
-    color:#b54769;
+    color:#FF5757;
 }
 
 .tab-contents{
@@ -172,6 +175,11 @@ nav ul li a:hover::after{
 }
 .services-list div h2{
     font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.services-list div h3{
+    font-size: 25px;
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -334,11 +342,11 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/background.png);
+        background-image: url(images/phone-background.png);
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 25%;
+        font-size: 14px;
     }
     .header-text h1{
         font-size: 30px;
