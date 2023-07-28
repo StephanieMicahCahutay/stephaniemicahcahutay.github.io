@@ -27,6 +27,10 @@ body{
     padding: 10px 10%;
 }
 
+.logo{
+    width: 10rem;
+}
+
 nav{
     display: flex;
     align-items: center;
